@@ -2,11 +2,7 @@ body{
   background-color: black;
 }
 
-.separatorLine{
-  width: 2px;
-  background-color: rgb(105,105,105);
-  position: absolute;
-}
+/*Header*/
 
 #logo{
   float: left;
@@ -97,6 +93,286 @@ body{
   color: black;
 }
 
+/*HeaderEnd*/
+
+/*Body*/
+#principalContainer{
+  background: rgb(250, 221, 144) none repeat scroll 0% 0%;
+  position: absolute;
+  width: 780px;
+  height: 1120px;
+  border-radius: 12px 0px 12px 12px;
+  top: 185px;
+  left: 170px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#searchBox{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 906px;
+  top: 145px;
+  z-index: 1;
+  background-color: rgb(250, 221, 144);
+  border-radius: 12px 12px 0px 0px;
+}
+
+#searchBox img{
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#last20Container{
+  top: 25px;
+  height: 538px;
+}
+
+#mostSearchedContainer{
+  left: 55px;
+  top: 600px;
+}
+
+#topFreeContainer{
+  top: 868px;
+}
+
+#last20Title{
+  font-size: 200%;
+}
+
+#last20TitleBox{
+  height: 10%;
+}
+
+.gamesContainer{
+  left: 55px;
+  width: 660px;
+}
+
+.container{
+  background-color: rgb(149,122,116);
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+.littleContainer{
+  width: 695px;
+  height: 230px;
+}
+
+.titleBox{
+  width: 100%;
+  background-color: rgb(250,210,83);
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.title{
+  font-weight: lighter;
+  left: 2%;
+  top: 6%;
+  position: absolute;
+}
+
+.littleTitleBox{
+  height: 15%;
+}
+
+.littleTitle{
+  font-size: 150%;
+}
+
+/*Aside*/
+#ranksContainer{
+  left : 980px;
+  top: 145px;
+  width: 340px;
+  height: 900px;
+}
+
+#ranksTitleBox{
+  height: 5%;
+}
+
+#ranksTitle{
+  font-size: 170%;
+}
+/*AsideEnd*/
+
+.row1{
+  top: 65px;
+}
+
+.row2{
+  top: 291px;
+}
+
+.gameCardsRow{
+  left: 1.7%;
+  position: absolute;
+  width: 640px;
+  height: 205px;
+}
+
+.littleGameCardsRow{
+  top: 18%;
+  position: absolute;
+  width: 707px;
+  height: 170px;
+}
+
+.gameCardsList{
+  left: 10%;
+  position: absolute;
+}
+
+.littleGameCardsList{
+  left: 3.5%;
+  top: 5%;
+  position: absolute;
+}
+
+.bigGameCard{
+  width: 155px;
+  height: 205px;
+}
+
+.littleGameCard{
+  width: 116px;
+  height: 145px;
+  position: absolute;
+}
+
+.gameCard{
+  background-color: rgb(66,66,66);
+  position: absolute;
+  top: 0px;
+  border: 1px solid black;
+}
+
+.gameCardItem{
+  margin-right: 160px;
+}
+
+.gameTitleBox{
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: absolute;
+}
+
+.gameTitle{
+  padding: 5px;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  font-size: 100%;
+}
+
+.littleGameTitle{
+  left:0%;
+}
+
+.littleGameDescription{
+  top: 45%;
+  position: absolute;
+}
+
+.bigGameTitle{
+  left: 10%;
+}
+
+.gameCover{
+  width: 100%;
+}
+
+.gameCover img{
+  max-width: 100%;
+}
+
+.gameOptionsList{
+  position: absolute;
+  left: 18%;
+  top: 90%;
+  font-size: 15px;
+}
+
+.littleGameOptionsList{
+  font-size: 9.2px;
+  top: 90%;
+  left:20%;
+}
+
+.gameOptionsList li{
+  padding-right: 6px;
+  padding-left: 0px;
+}
+
+.gameOptionsList li a{
+  text-decoration: none;
+  color: rgb(23,136,197);
+}
+
+.gameOptionsList li a:hover{
+  color: rgb(73,186,247);
+}
+
+.gameOptionsList li:not(:last-child) {
+  border-right: 1px solid rgb(23,136,197);
+}
+
+.rightArrow{
+  left: 92.4%;
+  transform: rotate(180deg);
+}
+
+.navArrow{
+  top: 47%;
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.littleNavArrow{
+  top: 47%;
+  position: absolute;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.littleRightArrow{
+  left: 97%;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.sliderList{
+  left:40%;
+  top: 95%;
+  position: absolute;
+}
+
+.littleSliderList{
+  left: 44%;
+  top: 92%;
+  position: absolute;
+}
+
+.slideDot{
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.littleSlideDot{
+  max-width: 10px;
+  max-height: 10px;
+}
+
 ul{
   list-style-type: none;
   margin: 0;
@@ -117,4 +393,8 @@ a{
 
 ul li:not(:first-child) {
   padding-left:10px;
+}
+
+p{
+  color: white;
 }
