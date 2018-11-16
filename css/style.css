@@ -19,21 +19,7 @@ body{
 }
 
 #headerSeparatorBox{
-  width: 57%;
-  height: 95px;
-  border-bottom: 2px solid rgb(105,105,105);
-  left: 18%;
-  top: 0;
-  position: absolute;
-}
-
-#sessionList{
-  margin-top: 20px;
-}
-
-#sessionList li:not(:last-child) {
-  border-right:1px solid white;
-  padding-right:10px;
+  top: 0%;
 }
 
 #sessionLinksBox{
@@ -81,11 +67,11 @@ body{
   background-color: rgb(250, 221, 144);
 }
 
-.sessionLink, .navLink{
+.sessionLink, .navLink, .footerLink{
   color: white;
 }
 
-.sessionLink:hover, .navLink:hover{
+.sessionLink:hover, .navLink:hover, .footerLink:hover{
   color: gray;
 }
 
@@ -143,6 +129,14 @@ body{
 
 #last20TitleBox{
   height: 10%;
+}
+
+.bodySeparatorBox{
+  width: 57%;
+  height: 95px;
+  border-bottom: 2px solid rgb(105,105,105);
+  left: 18%;
+  position: absolute;
 }
 
 .gamesContainer{
@@ -446,6 +440,40 @@ body{
 .littleSlideDot{
   max-width: 10px;
   max-height: 10px;
+}
+
+.linksList{
+  margin-top: 20px;
+}
+
+.linksList li:not(:last-child) {
+  border-right:1px solid white;
+  padding-right:10px;
+}
+
+/*Footer*/
+
+#footerSeparatorBox{
+  top:190%;
+  z-index: 2;
+}
+
+#footerLinksBox{
+  position: absolute;
+  top: 204%;
+  left: 26%;
+}
+
+#footerInfoBox{
+  width: 450px;
+  height: 24px;
+  position: absolute;
+  top: 212%;
+  left: 30%;
+}
+
+#footerInfo{
+  color: rgb(117, 117, 117);
 }
 
 ul{
