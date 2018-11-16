@@ -2,6 +2,14 @@ body{
   background-color: black;
 }
 
+nav{
+  margin-bottom: 4.5%;
+}
+
+#contentBody{
+  height: 1200px;
+}
+
 /*Header*/
 
 #logo{
@@ -51,6 +59,7 @@ body{
   left: 37%;
   position: absolute;
   top: 17%;
+  z-index: 0;
 }
 #navBar a{
   padding-right:10px;
