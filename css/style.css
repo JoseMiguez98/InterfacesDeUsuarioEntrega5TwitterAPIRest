@@ -200,6 +200,78 @@ body{
 #ranksTitle{
   font-size: 170%;
 }
+
+#rank1{
+  top:7%;
+}
+
+#rank2{
+  top:30%;
+}
+
+#rank3{
+  top:53%;
+}
+
+#rank4{
+  top:76%;
+}
+
+.rankBox{
+  width: 292px;
+  height: 184px;
+  position: absolute;top: 7%;
+  left: 7%;
+  background-color: rgb(66,66,66);
+  border-radius: 4%;
+}
+
+.rankGameTitleBox{
+  width: 60%;
+  padding: 2%;
+  left: 1%;
+  position: absolute;
+}
+
+.rankGameTitle{
+  color: white;
+  font-size: 27px;
+}
+
+.rankDescriptionBox{
+  position: absolute;
+  top: 25%;
+  left: 4.2%;
+  width: 90%;
+}
+
+.rankDescription{
+  font-size: 16px;
+  margin: 0px;
+}
+
+.rankOptionsList{
+  left: 2%;
+  top: 87%;
+  font-size: 13px;
+  position: absolute;
+}
+
+.rankStarsBox{
+  width: 160px;
+  height: 20px;
+  left: 47%;
+  top: 87%;
+  position: absolute;
+}
+
+.rankStar{
+  max-width: 19px;
+  max-height: 19px;
+}
+
+
+
 /*AsideEnd*/
 
 .row1{
@@ -297,6 +369,9 @@ body{
 
 .gameOptionsList{
   position: absolute;
+}
+
+.bigGameOptionsList{
   left: 18%;
   top: 90%;
   font-size: 15px;
@@ -304,8 +379,8 @@ body{
 
 .littleGameOptionsList{
   font-size: 9.2px;
-  top: 90%;
   left:20%;
+  top: 90%;
 }
 
 .gameOptionsList li{
