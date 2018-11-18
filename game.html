@@ -9,18 +9,12 @@
       <img id="coverImg" src="img/cover/cover.jpg" alt="cover">
       <img id="coverText" src="img/cover/text.png" alt="cover">
     </div>
-    <div id="additionalInfoContainer">
-      <span id="rateTitle">Valoración:</span><br>
-      <img id="rateImg" src="img/rate/rate.png" alt="valoracion">
-      <div id="separatorInfoLine"></div>
-      <span id="rankingTitle">High Scores:</span>
-      <ul id="rankingList">
-        <li>Walter White : 2500</li>
-        <li>Jesse Pinkman : 2000</li>
-        <li>Gus Fring : 1500</li>
-        <li>Hank Schrader : 1000</li>
-      </ul>
+
+    <div id="descriptionBox">
+      <span id="descriptionTitle">Descripción:</span>
+      <p id="descriptionText">Huye de la policia y suma puntos!</p>
     </div>
+
     <div id="gameTitle">
       <h1>Fuck the police!</h1>
     </div>
@@ -37,10 +31,23 @@
     <div id="hideCarsBoxBottom"></div>
     <button id="playButton" type="button" name="button">Jugar</button>
     <button id="restartButton" type="button" name="button">Reiniciar</button>
-    <div id="descriptionBox">
-      <span id="descriptionTitle">Descripción:</span>
-      <p id="descriptionText">Huye de la policia y suma puntos!</p>
+
+    <div id="additionalInfoContainer">
+      <div id="rateBox">
+        <span id="rateTitle">Valoración:</span><br>
+        <img id="rateImg" src="img/rate/rate.png" alt="valoracion">
+      </div>
+      <div id="rankingBox">
+        <span id="rankingTitle">High Scores:</span>
+        <ul id="rankingList">
+          <li>Walter White : 2500</li>
+          <li>Jesse Pinkman : 2000</li>
+          <li>Gus Fring : 1500</li>
+          <li>Hank Schrader : 1000</li>
+        </ul>
+      </div>
     </div>
+
     <div id="separatorLine"></div>
     <div id="controlsBox">
       <span id="controlsTitle">Controles:</span><br>
@@ -48,8 +55,30 @@
       <span id="orSpan">O</span>
       <img id="arrowsImg" src="img/controls/arrowKeys.png" alt="controls">
     </div>
+    <span id="tweetsTitle">Tweets:</span>
+    <div id="tweetsBox">
+    </div>
   </div>
 </div>
+
+<!--Twitter Javascript API-->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+  t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<script src="js/TwitterAPI.js" type="text/javascript"></script>
 <script src="js/InputManager.js" type="text/javascript"></script>
 <script src="js/ScoreManager.js" type="text/javascript"></script>
 <script src="js/ActionsManager.js" type="text/javascript"></script>

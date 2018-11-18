@@ -42,7 +42,7 @@
   background-color: inherit;
 }
 
-#descriptionBox, #controlsBox{
+#additionalInfoContainer, #controlsBox{
   font-family: "Source Sans Pro";
   text-align: left;
   top: 650px;
@@ -51,16 +51,25 @@
 }
 
 #descriptionBox{
-  left: 20px;
+  position: absolute;
+  left: 780px;
+  top: 290px;
 }
 
 #controlsBox{
-  left: 600px;
+  left: 830px;
+  width: 400px;
+  height: 220px;
 }
 
-#descriptionTitle, #controlsTitle{
+#descriptionTitle, #controlsTitle, #tweetsTitle{
   font-size: 35px;
   clear: right;
+}
+
+#controlsTitle{
+  left: 2%;
+  position: absolute;
 }
 
 #descriptionText{
@@ -68,25 +77,26 @@
 }
 
 #wasdImg, #arrowsImg{
-  max-width: 220px;
-  max-height: 220px;
-  top: 100px;
+  max-width: 150px;
+  max-height: 150px;
   position: absolute;
 }
 
-#wasdImg{
-  float: left;
-}
-
 #orSpan{
-  font-size: 50px;
-  top: 150px;
-  left: 275px;
+  font-size: 30px;
+  top: 110px;
+  left: 42%;
   position: absolute;
 }
 
 #arrowsImg{
-  left: 370px;
+  left: 50%;
+  top: 70px;
+}
+
+#wasdImg{
+  left: 2%;
+  top: 60px;
 }
 
 #separatorLine{
@@ -121,11 +131,10 @@
 }
 
 #additionalInfoContainer{
-  width: 450px;
-  height: 170px;
-  position: absolute;
-  left: 780px;
-  top: 290px;
+  width: 250px;
+  height: 330px;
+  left: 46%;
+  border-right: 2px solid rgb(51,51,51);
 }
 
 #rateImg{
@@ -138,25 +147,16 @@
   font-size: 25px;
 }
 
-#separatorInfoLine{
-  width: 3px;
-  height: 140px;
-  background-color: rgb(51,51,51);
-  left: 213px;
-  top: 15px;
-  position: absolute;
-}
-
 #rankingTitle{
   font-weight: bold;
   font-size: 25px;
-  left: 240px;
+  left: 4%;
   top: 5px;
   position: absolute;
 }
 
 #rankingList{
-  left:230px;
+  left:2%;
   top: 40px;
   list-style-type: circle !important;
   position: absolute;
@@ -190,6 +190,36 @@
 
 #restartButton{
   display: none;
+}
+
+#tweetsBox{
+  width: 520px;
+  height: 280px;
+  display: block;
+  overflow: auto;
+  left: 20px;
+  top: 700px;
+  z-index: 1;
+  position: absolute;
+}
+
+#tweetsTitle{
+  top: 650px;
+  left: 20px;
+  position: absolute;
+}
+
+#rateBox{
+  width: 97%;
+  height: 50%;
+  border-bottom: 2px solid rgb(51,51,51);
+}
+
+#rankingBox{
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  position: absolute;
 }
 
 p{
