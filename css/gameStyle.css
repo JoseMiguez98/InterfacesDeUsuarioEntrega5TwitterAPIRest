@@ -59,9 +59,9 @@ body, html{
 .explosion{
   width: 256px;
   height: 256px;
-  transform: translate(-80px, -50px);
   background-image: url('../img/explosion/explosion.png');
   animation: explosion 2s steps(52);
+  transform: translate(-80px, -100px);
 }
 
 .scoreBox{

@@ -4,6 +4,7 @@
 function gameOver(){
   let player = $('.player');
   player.css('background-image','url(img/explosion/explosion.png)');
+  player.css('transform','translate(-80px, -100px)');
   player.addClass('explosion');
   player.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
   function(e) {

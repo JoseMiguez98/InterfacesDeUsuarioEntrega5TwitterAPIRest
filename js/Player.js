@@ -57,4 +57,5 @@ Player.prototype.restart = function(){
   $('.player').css('background-image','url(img/cars/resized/black_viper.png)');
   $(".player").css("left", this.xOffset+"px");
   $(".player").css("top", this.yOffset+"px");
+  $(".player").css('transform','translate(0px, 0px)');
 }
