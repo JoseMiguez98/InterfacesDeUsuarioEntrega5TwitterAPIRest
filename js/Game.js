@@ -4,6 +4,7 @@
 function gameOver(){
   let player = $('.player');
   player.css('background-image','url(img/explosion/explosion.png)');
+  player.css('transition','none');
   player.css('transform','translate(-80px, -100px)');
   player.addClass('explosion');
   player.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
@@ -20,18 +21,19 @@ function update(inputManager,actionsManager,player,enemies,scoremanager){
         eval(actionsManager.getAction(key));
       }
     }
-
-    $('.scoreNumbers').html('<p>'+scoremanager.getScore()+'</p>');
   }
+
+  $('.scoreNumbers').html('<p>'+scoremanager.getScore()+'</p>');
 
   for (let i = 0; i < enemies.length; i++) {
     enemies[i].move();
-    if(enemies[i].collisionPlayer()){
-      gameOver();
-      player.alive = false;
+    if(player.isAlive()){
+      if(enemies[i].collisionPlayer()){
+        gameOver();
+        player.alive = false;
+      }
     }
   }
-
   window.requestAnimationFrame(function(){
     update(inputManager,actionsManager,player,enemies,scoremanager);
   });

@@ -58,4 +58,5 @@ Player.prototype.restart = function(){
   $(".player").css("left", this.xOffset+"px");
   $(".player").css("top", this.yOffset+"px");
   $(".player").css('transform','translate(0px, 0px)');
+  $(".player").css('transition','transform 0.3s');
 }

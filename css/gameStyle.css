@@ -61,7 +61,7 @@ body, html{
   height: 256px;
   background-image: url('../img/explosion/explosion.png');
   animation: explosion 2s steps(52);
-  transform: translate(-80px, -100px);
+  animation-delay: 0s;
 }
 
 .scoreBox{
