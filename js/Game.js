@@ -21,10 +21,9 @@ function update(inputManager,actionsManager,player,enemies,scoremanager){
         eval(actionsManager.getAction(key));
       }
     }
+
+    $('.scoreNumbers').html('<p>'+scoremanager.getScore()+'</p>');
   }
-
-  $('.scoreNumbers').html('<p>'+scoremanager.getScore()+'</p>');
-
   for (let i = 0; i < enemies.length; i++) {
     enemies[i].move();
     if(player.isAlive()){
@@ -45,7 +44,7 @@ $(document).ready(function(){
   let enemies = [];
   let inputManager = new InputManager();
   let actionsManager = new ActionsManager();
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 6; i++) {
     enemies.push(new Enemie(i));
   }
 
