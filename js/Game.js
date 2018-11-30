@@ -51,13 +51,14 @@ $(document).ready(function(){
 
   scoremanager.start();
 
-
   $(document).on("keydown",function(e) {
     inputManager.setKeyPressed(e.key,true);
   });
   $(document).on("keyup",function(e) {
     inputManager.setKeyPressed(e.key,false);
-    $('.player').css('transform','none');
+    if (player.isAlive()) {
+      $('.player').css('transform','none');
+    }
   });
 
   $('#playButton').on('click',function(){

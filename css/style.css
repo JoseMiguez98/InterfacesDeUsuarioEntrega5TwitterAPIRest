@@ -326,6 +326,11 @@ nav{
   position: absolute;
   top: 0px;
   border: 1px solid black;
+  transition: transform 0.5s;
+}
+
+.gameCard:hover{
+  transform: scale3d(1.2,1.2,1.2) rotateY(360deg);
 }
 
 .gameCardItem{
