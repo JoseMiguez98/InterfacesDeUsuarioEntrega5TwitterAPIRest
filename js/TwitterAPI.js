@@ -11,11 +11,17 @@
 
 $(document).ready(function(){
 
+
+  $('.loader').bind('ajaxStart',function(){
+    $(this).show();
+  });
+
   let settings = {
     "async": true,
     "crossDomain": true,
     "url": "https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?q=games",
     "method": "GET",
+    "onLoading": function(){console.log("loading...")},
     "headers": {
       "Authorization": "OAuth oauth_consumer_key=\"QvTWMzUCLQw4JVHt2A60norP5\",oauth_token=\"1060767256634888192-V1R3K41C3zuwFfSbIzw6qu5tuJuY1y\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1543463621\",oauth_nonce=\"8qKfBqwiMwz\",oauth_version=\"1.0\",oauth_signature=\"53pyPQDTg0Y1DzDoZwNDeH1VtBk%3D\"",
       "cache-control": "no-cache",
@@ -47,7 +53,7 @@ $(document).ready(function(){
 
 
   $( document ).ajaxComplete(function() {
-    console.log("ajaxComplete");
+    $('.loader').hide();
     twttr.ready(
       function(twttr){
         twttr.widgets.load();
