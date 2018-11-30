@@ -21,11 +21,10 @@ $(document).ready(function(){
     "crossDomain": true,
     "url": "https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?q=games",
     "method": "GET",
-    "onLoading": function(){console.log("loading...")},
     "headers": {
-      "Authorization": "OAuth oauth_consumer_key=\"QvTWMzUCLQw4JVHt2A60norP5\",oauth_token=\"1060767256634888192-V1R3K41C3zuwFfSbIzw6qu5tuJuY1y\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1543463621\",oauth_nonce=\"8qKfBqwiMwz\",oauth_version=\"1.0\",oauth_signature=\"53pyPQDTg0Y1DzDoZwNDeH1VtBk%3D\"",
+      "Authorization": "OAuth oauth_consumer_key=\"nCsoSzp2BoAcBAcybDLNjn72U\",oauth_token=\"1060767256634888192-tbfcVpGrUrYFFmyq4hWLfK9jza6T2O\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1543596342\",oauth_nonce=\"3UNan2FTWVK\",oauth_version=\"1.0\",oauth_signature=\"TLxyQJFsWDcrzQISKuCezHo5mQ0%3D\"",
       "cache-control": "no-cache",
-      "Postman-Token": "33075e11-ffc3-4734-85f4-3755d517dbcc"
+      "Postman-Token": "76541884-b6a0-4c6a-b253-71d569f79100"
     }
   }
 
