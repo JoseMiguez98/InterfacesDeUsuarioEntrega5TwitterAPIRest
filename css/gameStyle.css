@@ -27,7 +27,7 @@ body, html{
 }
 
 .roadAnim{
-  animation: bk-move-anim 7s linear forwards infinite;
+  animation: bk-move-anim 3s linear forwards infinite;
 }
 
 .roadLimit{

@@ -13,7 +13,7 @@ Enemie.prototype.generateDiv = function(id){
 }
 
 Enemie.prototype.getSpeed = function(){
-  return Math.floor(Math.random()*5)+3;
+  return Math.floor(Math.random()*12)+3;
 }
 
 Enemie.prototype.collisionPlayer = function(){
