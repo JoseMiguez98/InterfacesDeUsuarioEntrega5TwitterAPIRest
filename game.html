@@ -1,6 +1,8 @@
 <!--Fuck the police game HTML-->
 <link rel="stylesheet" href="css/gameContainer.css">
 <link rel="stylesheet" href="css/gameStyle.css">
+<link rel="stylesheet" href="css/commentsBox.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <div id="gameBodyContainer">
   <div id="principalContainer">
     <a id="closeIcon" href="#"><img src="img/close.png" alt="closeIcon"></a>
@@ -55,31 +57,19 @@
       <span id="orSpan">O</span>
       <img id="arrowsImg" src="img/controls/arrowKeys.png" alt="controls">
     </div>
-    <span id="tweetsTitle">Comentarios:</span>
-    <div id="tweetsBox">
-      <div class="loader"></div>
+    <span id="commentsTitle">Comentarios:</span>
+    <div id="commentsBox">
+      <!-- <div class="loader"></div> -->
+      <div class="row commentsList">
+      </div>
+      <!-- <div class="userPhoto"></div>
+      <div class="userEmail"></div>
+      <div class="userComment"></div> -->
     </div>
   </div>
 </div>
-
-<!--Twitter Javascript API-->
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-  t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
-<script src="js/TwitterAPI.js" type="text/javascript"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/commentsAPI.js" type="text/javascript"></script>
 <script src="js/InputManager.js" type="text/javascript"></script>
 <script src="js/ScoreManager.js" type="text/javascript"></script>
 <script src="js/ActionsManager.js" type="text/javascript"></script>

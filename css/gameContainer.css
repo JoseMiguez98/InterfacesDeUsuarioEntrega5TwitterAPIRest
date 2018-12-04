@@ -79,7 +79,7 @@
   height: 220px;
 }
 
-#descriptionTitle, #controlsTitle, #tweetsTitle{
+#descriptionTitle, #controlsTitle, #commentsTitle{
   font-size: 35px;
   clear: right;
 }
@@ -209,7 +209,7 @@
   display: none;
 }
 
-#tweetsBox{
+#commentsBox{
   width: 520px;
   height: 280px;
   display: block;
@@ -221,7 +221,7 @@
   box-shadow: 6px 7px 5px;
 }
 
-#tweetsTitle{
+#commentsTitle{
   top: 650px;
   left: 20px;
   position: absolute;

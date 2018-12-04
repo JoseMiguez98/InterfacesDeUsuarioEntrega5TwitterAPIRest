@@ -76,8 +76,8 @@ body, html{
 .scoreNumbers{
   width: 140px;
   height: 100px;
-  left: 100px;
-  top: -12px;
+  left: 110px;
+  top: 20px;
   position: absolute;
   font-size: 30px;
 }
